@@ -1,18 +1,5 @@
-﻿
-
-using Design_Patterns.Abstract_Factory;
-using Design_Patterns.Bridge;
-using Design_Patterns.Composite;
-using Design_Patterns.Decorator;
-using Design_Patterns.Facade;
-using Design_Patterns.Factory;
-using Design_Patterns.Object_Adapter;
-using Design_Patterns.Prototype;
-using Design_Patterns.Command;
+﻿using Design_Patterns.Visitor;
 using System;
-using Design_Patterns.State;
-using Design_Patterns.Strategy;
-using Design_Patterns.Visitor;
 
 namespace Design_Patterns
 {
