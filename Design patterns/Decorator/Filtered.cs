@@ -6,7 +6,7 @@ namespace Design_Patterns.Decorator
 {
     public class Filtered : ICoffee
     {
-        public double Cost => 2.95;
+        public double Cost => 3.05;
 
         public string GetDescription() => "Filtered coffee";
     }

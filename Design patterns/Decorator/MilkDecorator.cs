@@ -8,7 +8,7 @@ namespace Design_Patterns.Decorator
     {
         public MilkDecorator(ICoffee coffee) : base(coffee)
         {
-            name = "Milk";
+            name = "Milk (leche)";
             price = 0.25;
         }
     }
