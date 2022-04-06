@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Design_Patterns.Factory
+﻿namespace Design_Patterns.Factory
 {
     public class PlatinumCreditCard : CreditCardBase
     {
@@ -11,7 +7,7 @@ namespace Design_Patterns.Factory
         private int annualCharge;
         public PlatinumCreditCard(int limit, int annualCharge)
         {
-            cardType = "Platinum";
+            cardType = "Platinum card";
             this.limit = limit;
             this.annualCharge = annualCharge;
         }

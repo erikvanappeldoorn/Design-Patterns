@@ -11,7 +11,7 @@ namespace Design_Patterns.Factory
         private int annualCharge;
         public RegularCreditCard(int limit, int annualCharge)
         {
-            cardType = "Regular";
+            cardType = "Regular card";
             this.limit = limit;
             this.annualCharge = annualCharge;
         }
