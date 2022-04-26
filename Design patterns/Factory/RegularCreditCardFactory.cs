@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Design_Patterns.Factory
+﻿namespace Design_Patterns.Factory
 {
-    public class RegularCreditCardFactory : CreditCardFactoryBase
+    public class RegularCreditCardFactory : ICreditCardFactory
     {
         private readonly int limit;
         private readonly int annualCharge;
@@ -14,7 +10,7 @@ namespace Design_Patterns.Factory
             this.limit = limit;
             this.annualCharge = annualCharge;
         }
-        public override CreditCardBase GetCreditCard()
+        public ICreditCard GetCreditCard()
         {
             return new RegularCreditCard(limit, annualCharge);
         }

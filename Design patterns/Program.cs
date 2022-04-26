@@ -1,4 +1,7 @@
-﻿using Design_Patterns.Visitor;
+﻿using Design_Patterns.Abstract_Factory;
+using Design_Patterns.Factory;
+using Design_Patterns.Object_Adapter;
+using Design_Patterns.Visitor;
 using System;
 
 namespace Design_Patterns
@@ -7,6 +10,17 @@ namespace Design_Patterns
     {
         static void Main(string[] args)
         {
+            var logger = new LogAdapter();
+            logger.Log("Hello, IKOMM");
+
+            
+
+            //var factory = new SamsungFactory();
+            //var phone = factory.GetSmartPhone();
+            //Console.WriteLine(phone.GetModelDetails());
+
+            Console.ReadLine();
+
             //Factory 
 
             //var platinumCreditcardFactory = new PlatinumCreditCardFactory(50_000, 100);
@@ -86,11 +100,11 @@ namespace Design_Patterns
 
             // Visitor
 
-            Employee employee = new Employee("Erik van Appeldoorn", 50_000, 25);
-            var incomeVisitor = new IncomeVisitor();
-            var paidTimeOffVisitor = new PaidTimeOffVisitor();
-            employee.Accept(incomeVisitor);
-            employee.Accept(paidTimeOffVisitor);
+            //Employee employee = new Employee("Erik van Appeldoorn", 50_000, 25);
+            //var incomeVisitor = new IncomeVisitor();
+            //var paidTimeOffVisitor = new PaidTimeOffVisitor();
+            //employee.Accept(incomeVisitor);
+            //employee.Accept(paidTimeOffVisitor);
 
             Console.ReadLine();
 

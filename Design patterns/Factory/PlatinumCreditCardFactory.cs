@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Design_Patterns.Factory
 {
-    public class PlatinumCreditCardFactory : CreditCardFactoryBase
+    public class PlatinumCreditCardFactory : ICreditCardFactory
     {
             private readonly int limit;
             private readonly int annualCharge;
@@ -14,7 +14,7 @@ namespace Design_Patterns.Factory
                 this.limit = limit;
                 this.annualCharge = annualCharge;
             }
-            public override CreditCardBase GetCreditCard()
+            public ICreditCard GetCreditCard()
             {
                 return new PlatinumCreditCard(limit, annualCharge);
             }

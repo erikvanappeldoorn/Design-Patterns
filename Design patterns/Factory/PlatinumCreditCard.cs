@@ -1,6 +1,6 @@
 ﻿namespace Design_Patterns.Factory
 {
-    public class PlatinumCreditCard : CreditCardBase
+    public class PlatinumCreditCard : ICreditCard
     {
         private string cardType;
         private int limit;
@@ -11,9 +11,9 @@
             this.limit = limit;
             this.annualCharge = annualCharge;
         }
-        public override string CardType => cardType;
+        public string CardType => cardType;
 
-        public override int Limit { get => limit; set => limit = value; }
-        public override int AnnualCharge { get => annualCharge; set => annualCharge = value; }
+        public int Limit { get => limit; set => limit = value; }
+        public int AnnualCharge { get => annualCharge; set => annualCharge = value; }
     }
 }
