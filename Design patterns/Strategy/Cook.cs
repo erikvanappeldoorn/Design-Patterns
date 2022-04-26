@@ -6,9 +6,9 @@ namespace Design_Patterns.Strategy
 {
     public class Cook
     {
-        private readonly CookStrategy strategy;
+        private readonly ICookStrategy strategy;
 
-        public Cook(CookStrategy strategy)
+        public Cook(ICookStrategy strategy)
         {
             this.strategy = strategy;
         }

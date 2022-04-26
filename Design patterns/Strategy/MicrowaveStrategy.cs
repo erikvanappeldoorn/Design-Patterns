@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Design_Patterns.Strategy
 {
-    public class MicrowaveStrategy : CookStrategy
+    public class MicrowaveStrategy : ICookStrategy
     {
-        public override void Cook(string food)
+        public void Cook(string food)
         {
             Console.WriteLine($"Cooking {food} by microwaving it");
         }
