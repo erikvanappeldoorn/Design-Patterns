@@ -4,6 +4,8 @@ using System.Text;
 
 namespace Design_Patterns.Facade
 {
+
+    //Added for the demo
     public class Home
     {
         private AudioSystem audioSystem = new AudioSystem();
