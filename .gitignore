@@ -5,3 +5,5 @@ Grand Prix Radio/obj/
 .vs/
 Design patterns/bin
 Design patterns/obj
+.DS_Store
+.idea

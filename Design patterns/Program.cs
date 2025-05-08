@@ -3,6 +3,9 @@ using Design_Patterns.Factory;
 using Design_Patterns.Object_Adapter;
 using Design_Patterns.Visitor;
 using System;
+using Design_Patterns.Decorator;
+using Design_Patterns.Facade;
+using Design_Patterns.Strategy;
 
 namespace Design_Patterns
 {
@@ -10,8 +13,14 @@ namespace Design_Patterns
     {
         static void Main(string[] args)
         {
-            var logger = new LogAdapter();
-            logger.Log("Hello, IKOMM");
+            //var strategy = new MicrowaveStrategy();
+            //var cook = new Cook(strategy);
+            //cook.StartCooking("some meat");
+            
+            
+            
+            //var logger = new LogAdapter();
+            //logger.Log("Hello, IKOMM");
 
             
 
